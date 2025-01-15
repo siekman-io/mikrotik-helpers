@@ -77,8 +77,8 @@ def generate_mikrotik_list(ip_attempts, list_name):
 if __name__ == "__main__":
     # Configuratie voor meerdere servers
     servers = [
-        {"host": "da1.siekman.io", "port": 20222, "username": "sysops", "key_path": "/home/siekman/.ssh/js", "file_path": "/usr/local/directadmin/data/admin/brute_ip.data"},
-        {"host": "da2.siekman.io", "port": 20222, "username": "sysops", "key_path": "/home/siekman/.ssh/js", "file_path": "/usr/local/directadmin/data/admin/brute_ip.data"}
+        {"host": "da1.hostname.nl", "port": 22, "username": "admin", "key_path": "/path/to/ssh/key", "file_path": "/usr/local/directadmin/data/admin/brute_ip.data"},
+        {"host": "da2.hostname.nl", "port": 22, "username": "admin", "key_path": "/path/to/ssh/key", "file_path": "/usr/local/directadmin/data/admin/brute_ip.data"}
     ]
 
     all_ip_attempts = {}
